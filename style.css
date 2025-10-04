@@ -8,22 +8,21 @@
 
 body {
   line-height: 1.6;
-  color: #E0E0E0; /* Gris claro */
-  background-color: #121212; /* Fondo oscuro */
+  color: #FFFFFF; /* Letras blancas */
+  background-color: #000000; /* Fondo negro */
 }
 
 /* Header */
 header {
   height: 100vh;
-  background-color: #121212; /* Fondo oscuro */
-  color: #E0E0E0;
+  background-color: #000000;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  position: relative;
 }
 
 .navbar {
@@ -39,7 +38,6 @@ header {
 .navbar .logo {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #E0E0E0;
 }
 
 .nav-links {
@@ -49,14 +47,14 @@ header {
 }
 
 .nav-links a {
-  color: #E0E0E0;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #F59E0B; /* Naranja suave */
+  color: #F59E0B;
 }
 
 /* Header content */
@@ -71,7 +69,7 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #1E3A8A; /* Azul metálico */
+  border: 3px solid #FFFFFF;
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -86,21 +84,38 @@ header {
   line-height: 1.5;
 }
 
-/* Secciones */
-section {
+/* About Section */
+.about-section {
   padding: 80px 20px;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 40px auto;
   text-align: center;
-  background-color: #1F2937; /* Gris oscuro */
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech img {
+  width: 60px;
+  height: 60px;
 }
 
 /* Contact Section */
 .contact-section {
-  background-color: #1F2937;
-  color: #E0E0E0;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .contact-icons {
@@ -133,9 +148,9 @@ section {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #374151; /* Gris oscuro */
-  color: #E0E0E0;
-  border-top: 1px solid #1F2937;
+  background-color: #111111;
+  color: #FFFFFF;
+  border-top: 1px solid #333333;
 }
 
 /* Responsive */
