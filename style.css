@@ -120,35 +120,10 @@ header {
 
 .contact-icons {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
-  align-items: center;
-}
-
-.contact-icons a {
-  text-decoration: none;
-  color: #F59E0B; /* Naranja acento */
-  font-size: 1.2rem;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-icons a i {
-  font-size: 1.5rem;
-}
-
-.contact-icons a:hover {
-  color: #D97706; /* Naranja más oscuro */
-}
-.contact-icons {
-  display: flex;
   justify-content: center;
-  gap: 50px; /* espacio entre las dos columnas */
-  margin-top: 20px;
+  gap: 50px; /* espacio entre las columnas */
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .contact-item {
@@ -170,7 +145,6 @@ header {
   color: #D97706; /* naranja más oscuro al hover */
 }
 
-
 /* Footer */
 footer {
   text-align: center;
@@ -189,5 +163,9 @@ footer {
   .navbar {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .contact-icons {
+    gap: 30px;
   }
 }
