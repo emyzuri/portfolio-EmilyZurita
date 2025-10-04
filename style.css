@@ -1,4 +1,4 @@
-/* Reset & fonts */
+/* Reset & fuentes */
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +8,15 @@
 
 body {
   line-height: 1.6;
-  color: #1F2937; /* Gris oscuro */
-  background-color: #F5F5F5; /* Fondo claro */
+  color: #E0E0E0; /* Gris claro */
+  background-color: #121212; /* Fondo oscuro */
 }
 
 /* Header */
 header {
   height: 100vh;
-  background-color: #FFFFFF; /* Blanco */
-  color: #1F2937;
+  background-color: #121212; /* Fondo oscuro */
+  color: #E0E0E0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,6 @@ header {
   text-align: center;
   padding: 0 20px;
   position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* sombra sutil */
 }
 
 .navbar {
@@ -40,7 +39,7 @@ header {
 .navbar .logo {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #1F2937;
+  color: #E0E0E0;
 }
 
 .nav-links {
@@ -50,14 +49,14 @@ header {
 }
 
 .nav-links a {
-  color: #1F2937;
+  color: #E0E0E0;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #3B82F6; /* azul acento */
+  color: #F59E0B; /* Naranja suave */
 }
 
 /* Header content */
@@ -72,7 +71,7 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #3B82F6; /* azul acento */
+  border: 4px solid #1E3A8A; /* Azul metálico */
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -87,45 +86,56 @@ header {
   line-height: 1.5;
 }
 
-/* Sections */
+/* Secciones */
 section {
   padding: 80px 20px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
-  background-color: #FFFFFF; /* blanco para secciones */
-  margin-bottom: 20px;
+  background-color: #1F2937; /* Gris oscuro */
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 /* Contact Section */
 .contact-section {
-  background-color: #FFFFFF;
-  color: #1F2937;
+  background-color: #1F2937;
+  color: #E0E0E0;
 }
 
-.contact-section .btn {
-  padding: 12px 30px;
-  background-color: #3B82F6; /* azul principal */
-  color: #FFFFFF;
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.contact-icons a {
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
+  color: #F59E0B; /* Naranja acento */
+  font-size: 1.2rem;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.contact-section .btn:hover {
-  background-color: #2563EB; /* azul oscuro hover */
+.contact-icons a i {
+  font-size: 1.5rem;
+}
+
+.contact-icons a:hover {
+  color: #D97706; /* Naranja más oscuro */
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #E5E7EB; /* gris claro */
-  color: #1F2937;
-  border-top: 1px solid #D1D5DB;
+  background-color: #374151; /* Gris oscuro */
+  color: #E0E0E0;
+  border-top: 1px solid #1F2937;
 }
 
 /* Responsive */
