@@ -143,6 +143,33 @@ header {
 .contact-icons a:hover {
   color: #D97706; /* Naranja más oscuro */
 }
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* espacio entre las dos columnas */
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column; /* icono arriba, texto abajo */
+  align-items: center;
+  text-decoration: none;
+  color: #F59E0B; /* color naranja */
+  transition: 0.3s;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-item i {
+  font-size: 2rem; /* tamaño del icono */
+}
+
+.contact-item:hover {
+  color: #D97706; /* naranja más oscuro al hover */
+}
+
 
 /* Footer */
 footer {
